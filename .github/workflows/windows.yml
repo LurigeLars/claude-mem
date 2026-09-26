@@ -23,7 +23,7 @@ jobs:
     runs-on: windows-2022
     timeout-minutes: 35
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
@@ -118,7 +118,7 @@ jobs:
       # (CHROMA_PREWARM_TIMEOUT_BOUNDS in ChromaMcpManager.ts).
       CLAUDE_MEM_CHROMA_PREWARM_TIMEOUT_MS: '600000'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
